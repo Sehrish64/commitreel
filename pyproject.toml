@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "commitreel"
+version = "0.1.0"
+description = "Turn your Git commit history into a video."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["Pillow>=10.1"]
+keywords = ["code-to-video", "git", "github", "video-generator", "commit-history"]
+
+[project.scripts]
+commitreel = "commitreel.cli:main"
